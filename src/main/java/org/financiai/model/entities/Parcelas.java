@@ -5,7 +5,7 @@ public class Parcelas {
     private double valorParcela;
     private double valorAmortizacao;
 
-    public Parcelas(){
+    public Parcelas() {
 
     }
 
