@@ -1,0 +1,72 @@
+/* Estilo para a VBox */
+.root {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-font-family: "Roboto", sans-serif;
+}
+
+/* Título */
+.titulo {
+    -fx-font-size: 14px; /* Tamanho reduzido */
+    -fx-font-weight: 600;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px;
+    -fx-align-self: center;
+}
+
+/* Estilo dos campos de entrada */
+.text-field, .choice-box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #00A1D6;
+    -fx-border-radius: 6px; /* Bordas mais suaves */
+    -fx-padding: 6px; /* Reduzindo o padding */
+    -fx-pref-width: 250px; /* Diminuindo a largura */
+    -fx-font-size: 12px; /* Fonte reduzida */
+}
+
+/* Estilo dos Labels */
+.label {
+    -fx-font-size: 12px; /* Fonte menor */
+    -fx-text-fill: #333333;
+    -fx-font-weight: 500;
+}
+
+/* Estilo do botão */
+.button, .botao {
+    -fx-background-color: #00A1D6;
+    -fx-text-fill: white;
+    -fx-font-size: 12px; /* Fonte menor */
+    -fx-padding: 8px 16px; /* Botão mais compacto */
+    -fx-border-radius: 20px;
+    -fx-cursor: hand;
+}
+
+/* Resultado */
+#resultadoLabel {
+    -fx-font-size: 12px; /* Fonte menor */
+    -fx-text-fill: #4CAF50;
+    -fx-padding: 8px;
+    -fx-background-color: #E8F5E9;
+    -fx-border-radius: 6px;
+}
+
+/* Tabela de parcelas */
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #00A1D6;
+    -fx-border-radius: 6px; /* Bordas mais suaves */
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 12px; /* Fonte reduzida */
+    -fx-padding: 8px; /* Padding reduzido */
+    -fx-pref-width: 250px; /* Largura mais compacta */
+    -fx-pref-height: 150px; /* Altura mais compacta */
+    -fx-wrap-text: true; /* Permitir quebra de texto */
+}
+
+
+
+
+
+
+

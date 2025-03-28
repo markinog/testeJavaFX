@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="609.0" prefWidth="400.0" spacing="20" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.financiai.JavaFxController.ControllerPage">
+    <stylesheets>
+        <URL value="@../css/style.css" />
+    </stylesheets>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Logotipo -->
+    <fx:define>
+        <Image fx:id="logoImageSource" url="@../css/logo.webp" />
+    </fx:define>
+
+    <!-- Logotipo -->
+    <ImageView fx:id="logoImage" fitHeight="100" fitWidth="100" image="${logoImageSource}" preserveRatio="true" smooth="true" />
+
+    <!-- Título -->
+    <Label styleClass="titulo" text="Simulador de Financiamento" />
+
+    <!-- Formulário para entrada de dados -->
+    <GridPane alignment="CENTER" hgap="15" prefHeight="415.0" prefWidth="486.0" vgap="15">
+        <Label text="Nome do Cliente:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="nomeClienteField" promptText="Digite o nome" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="CPF do Cliente:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="cpfClienteField" promptText="Digite o CPF" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Renda Mensal:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="rendaClienteField" promptText="Digite a renda" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Prazo (meses):" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="prazoField" promptText="Digite o prazo" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="Valor do Imóvel:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="valorImovelField" promptText="Digite o valor do imóvel" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Label text="Valor de Entrada:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <TextField fx:id="valorEntradaField" promptText="Digite o valor de entrada" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <Label text="Taxa de Juros (%):" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <TextField fx:id="taxaJurosField" promptText="Digite a taxa de juros" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+        <Label text="Tipo de Amortização:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <ChoiceBox fx:id="tipoFinanciamentoBox" styleClass="choice-box" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="SAC" />
+                    <String fx:value="PRICE" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+
+        <Label text="Tipo de Imóvel:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <ChoiceBox fx:id="tipoImovelBox" styleClass="choice-box" GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="CASA" />
+                    <String fx:value="APARTAMENTO" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+    <!-- Botão de cálculo -->
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#calcularFinanciamento" styleClass="botao" text="Calcular" />
+    </HBox>
+</VBox>

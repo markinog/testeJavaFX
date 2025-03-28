@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.financiai.JavaFxController.ResultPageController">
+   <children>
+      <Label fx:id="SimulacaoResultLabel" layoutX="95.0" layoutY="28.0" prefHeight="17.0" prefWidth="129.0" text="Resultado da simulação:" />
+      <TextArea fx:id="tabelaParcelasArea" editable="false" layoutX="35.0" layoutY="51.0" prefHeight="358.0" prefWidth="250.0" />
+   </children>
+</Pane>
