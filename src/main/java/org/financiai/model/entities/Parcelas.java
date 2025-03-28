@@ -9,7 +9,7 @@ public class Parcelas {
 
     }
 
-    public Parcelas(int numeroParcela, double valorParcela, double valorAmortizacao) {
+    public Parcelas(int numeroParcela, double  valorParcela, double valorAmortizacao) {
         this.numeroParcela = numeroParcela;
         this.valorParcela = valorParcela;
         this.valorAmortizacao = valorAmortizacao;
